@@ -1,6 +1,6 @@
 # Tarea Alfil Ajedrez
-## Profesor: Luis Montoya Ramirez
-## Alumno:
+## Profesor: José Ramón Jimenez Reyes
+## Alumno: Luis Montoya Ramírez
 
 La tarea va a consistir en modelar el movimiento de un peÃ³n de ajedrez por el tablero de dicho juego.
 <div align="center">
