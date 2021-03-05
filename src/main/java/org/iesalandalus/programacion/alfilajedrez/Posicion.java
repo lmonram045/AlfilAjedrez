@@ -4,9 +4,16 @@ public class Posicion {
 	private int fila;
 	private char columna;
 	
+	//constructor
 	public Posicion (int fila, char columna) {
 		setFila(fila);
 		setColumna(columna);
+	}
+	
+	//constructor copia
+	public Posicion(Posicion posicion) {
+		setFila(posicion.getFila());
+		setColumna(posicion.getColumna());
 	}
 	
 	private void setFila(int fila) {
@@ -19,9 +26,11 @@ public class Posicion {
 		}
 		
 	}
+	
 	public int getFila() {
 		return fila;
 	}
+	
 	private void setColumna(char columna) {
 		if (columna < 'a' || columna > 'h') {
 			/*Hubiera creado una constante para el texto del error, pero dejo un literal
@@ -32,11 +41,9 @@ public class Posicion {
 		}
 		
 	}
-	public char getColumna() {
+	
+	public char getColumna() { 
 		return columna;
 	}
-	
-	
-	
-	
+
 }
