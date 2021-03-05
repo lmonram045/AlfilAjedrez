@@ -4,6 +4,11 @@ public class Posicion {
 	private int fila;
 	private char columna;
 	
+	public Posicion (int fila, char columna) {
+		setFila(fila);
+		setColumna(columna);
+	}
+	
 	private void setFila(int fila) {
 		if (fila < 1 || fila > 8) {
 			/*Hubiera creado una constante para el texto del error, pero dejo un literal
@@ -30,6 +35,7 @@ public class Posicion {
 	public char getColumna() {
 		return columna;
 	}
+	
 	
 	
 	
