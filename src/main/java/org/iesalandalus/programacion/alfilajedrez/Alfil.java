@@ -4,6 +4,11 @@ public class Alfil {
 	private Color color;
 	private Posicion posicion;
 	
+	public Alfil() {
+		color = Color.NEGRO;
+		posicion = new Posicion(8, 'f');
+	}
+	
 	public Color getColor() {
 		return color;
 	}
