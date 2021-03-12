@@ -151,6 +151,12 @@ public class Alfil {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return posicion + ", " + "color=" + color;
+	}
+	
 	
 
 }
