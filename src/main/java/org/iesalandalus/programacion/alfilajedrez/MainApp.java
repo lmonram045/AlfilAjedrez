@@ -14,10 +14,22 @@ public class MainApp {
 		}
 	}
 	
+	private static void mostrarMenu() {
+		System.out.println("||============================================================||");
+		System.out.println("||         Opciones para crear, colocar y mover alfil         ||");
+		System.out.println("||============================================================||");
+		System.out.println("||                                                            ||");
+		System.out.println("|| 1. Crear alfil genérico (por defecto).                     ||");
+		System.out.println("|| 2. Crear alfil a partir de un color.                       ||");
+		System.out.println("|| 3. Crear alfil a partir de un color y una columna inicial. ||");
+		System.out.println("|| 4. Mover alfil.                                            ||");
+		System.out.println("|| 5. Salir.                                                  ||");
+		System.out.println("||============================================================||");
+	}
+
 	
 	public static void main(String[] args) {
 	
-		
 		
 	
 	}
