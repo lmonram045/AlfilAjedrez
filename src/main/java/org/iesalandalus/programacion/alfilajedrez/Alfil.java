@@ -50,9 +50,7 @@ public class Alfil {
 			throw new IllegalArgumentException("ERROR: El número de pasos debe ser positivo.");
 		}
 		
-		/*if (posicion.getColumna < 'a' || posicion.getColumna > 'h' || posicion.getFila < 1 || posicion.getFila > 8) {
-			throw new Operation
-		}*/
+	
 		Posicion posicionDestino;
 		int filaDestino;
 		char columnaDestino;
