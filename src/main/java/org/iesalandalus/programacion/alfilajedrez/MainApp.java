@@ -41,15 +41,16 @@ public class MainApp {
 	
 	private static Color elegirColor() {
 		int opcion;
+		System.out.println("||==========================================================||");
+		System.out.println("||                      Elija un color                      ||");
+		System.out.println("||==========================================================||");
+		System.out.println("||                                                          ||");
+		System.out.println("|| 1. Blanco                                                ||");
+		System.out.println("|| 2. Negro                                                 ||");
+		System.out.println("||                                                          ||");
+		System.out.println("||==========================================================||");
 		do {
-			System.out.println("||==========================================================||");
-			System.out.println("||                      Elija un color                      ||");
-			System.out.println("||==========================================================||");
-			System.out.println("||                                                          ||");
-			System.out.println("|| 1. Blanco                                                ||");
-			System.out.println("|| 2. Negro                                                 ||");
-			System.out.println("||                                                          ||");
-			System.out.println("||==========================================================||");
+			
 			opcion = Entrada.entero();
 		} while (opcion != 1 && opcion != 2);
 		
@@ -61,9 +62,10 @@ public class MainApp {
 		}
 	}
 	
+	
+	
 	public static void main(String[] args) {
 	
-
 	
 	}
 
