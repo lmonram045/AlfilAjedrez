@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.alfilajedrez;
 
+import javax.naming.OperationNotSupportedException;
+
 import org.iesalandalus.programacion.utilidades.Entrada;
 
 public class MainApp {
@@ -24,6 +26,7 @@ public class MainApp {
 		System.out.println("|| 3. Crear alfil a partir de un color y una columna inicial. ||");
 		System.out.println("|| 4. Mover alfil.                                            ||");
 		System.out.println("|| 5. Salir.                                                  ||");
+		System.out.println("||                                                            ||");
 		System.out.println("||============================================================||");
 	}
 
@@ -36,9 +39,31 @@ public class MainApp {
 		return opcion;
 	}
 	
+	private static Color elegirColor() {
+		int opcion;
+		do {
+			System.out.println("||==========================================================||");
+			System.out.println("||                      Elija un color                      ||");
+			System.out.println("||==========================================================||");
+			System.out.println("||                                                          ||");
+			System.out.println("|| 1. Blanco                                                ||");
+			System.out.println("|| 2. Negro                                                 ||");
+			System.out.println("||                                                          ||");
+			System.out.println("||==========================================================||");
+			opcion = Entrada.entero();
+		} while (opcion != 1 && opcion != 2);
+		
+		
+		if (opcion == 1) {
+			return Color.BLANCO;
+		} else {
+			return Color.NEGRO;
+		}
+	}
+	
 	public static void main(String[] args) {
 	
-
+elegirColor();
 	
 	}
 
