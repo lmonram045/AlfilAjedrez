@@ -118,6 +118,36 @@ public class MainApp {
 		alfil = new Alfil(color, columna);
 		System.out.println("Se creó un alfil a partir del color y columna seleccionados.");
 	}
+	
+	private static void moverAlfil() throws OperationNotSupportedException {
+		mostrarMenuDirecciones();
+		int opcion = elegirDireccion();
+		Direccion direccion = null;
+		switch (opcion) {
+			case 1:
+				direccion = Direccion.ARRIBA_IZQUIERDA;
+				break;
+			
+			case 2:
+				direccion = Direccion.ARRIBA_DERECHA;
+				break;
+				
+			case 3:
+				direccion = Direccion.ABAJO_DERECHA;
+				break;
+			case 4:
+				direccion = Direccion.ARRIBA_IZQUIERDA;
+				break;
+			default:
+				break;
+		}
+		
+		System.out.print("Indique el número de pasos a dar");
+		int pasos = Entrada.entero();
+		alfil.mover(direccion, pasos);
+		System.out.println("Movimiento realizado correctamente");
+		
+	}
 	public static void main(String[] args) {
 		
 	}
