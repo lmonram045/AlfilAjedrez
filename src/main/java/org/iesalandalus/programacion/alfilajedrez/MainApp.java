@@ -106,6 +106,12 @@ public class MainApp {
 		System.out.println("Se creó el alfil por defecto en la posición 8f.");
 	}
 	
+	private static void crearAlfilColor() {
+		Color color = elegirColor();
+		alfil = new Alfil(color);
+		System.out.println("Se creó alfil por defecto a partir del color.");
+	}
+	
 	public static void main(String[] args) {
 		
 	}
