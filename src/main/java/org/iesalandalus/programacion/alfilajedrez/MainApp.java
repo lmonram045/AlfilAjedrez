@@ -112,6 +112,12 @@ public class MainApp {
 		System.out.println("Se creó alfil por defecto a partir del color.");
 	}
 	
+	private static void crearAlfilColorColumna() {
+		char columna = elegirColumnaInicial();
+		Color color = elegirColor();
+		alfil = new Alfil(color, columna);
+		System.out.println("Se creó un alfil a partir del color y columna seleccionados.");
+	}
 	public static void main(String[] args) {
 		
 	}
