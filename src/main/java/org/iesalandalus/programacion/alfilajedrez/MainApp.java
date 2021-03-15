@@ -101,6 +101,11 @@ public class MainApp {
 		return opcion;
 	}
 	
+	private static void crearAlfilDefecto() {
+		alfil = new Alfil();
+		System.out.println("Se creó el alfil por defecto en la posición 8f.");
+	}
+	
 	public static void main(String[] args) {
 		
 	}
