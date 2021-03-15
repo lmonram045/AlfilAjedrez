@@ -175,8 +175,18 @@ public class MainApp {
 	
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws OperationNotSupportedException {
+		int opcion;
+		do {
+			mostrarMenu();
+			opcion = elegirOpcion();
+			ejecutarOpcion(opcion);
+			if (opcion != 5) {
+				mostrarAlfil();
+			}
+		} while (opcion != 5);
 		
+		System.out.println("Hasta luego noruego");
 	}
 
 	
