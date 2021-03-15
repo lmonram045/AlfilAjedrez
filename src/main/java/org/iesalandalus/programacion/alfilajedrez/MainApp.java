@@ -148,6 +148,33 @@ public class MainApp {
 		System.out.println("Movimiento realizado correctamente");
 		
 	}
+	
+	private static void ejecutarOpcion(int opcion) throws OperationNotSupportedException {
+		switch (opcion) {
+			case 1:
+				crearAlfilDefecto();
+				break;
+			case 2:
+				crearAlfilColor();
+				break;
+			case 3:
+				crearAlfilColorColumna();
+				break;
+			case 4:
+				if (alfil != null) {
+					moverAlfil();
+				} else {
+					System.out.println("No hay ningún alfil creado.");
+				}
+				break;
+			default:
+				break;
+			
+		}
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		
 	}
